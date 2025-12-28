@@ -77,12 +77,22 @@
     </footer>
 
     <!-- Dialogflow Messenger Integration -->
-    <!-- Note: User needs to replace the project-id and agent-id -->
+    <!-- Note: User needs to replace the project-id and agent-id 
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/beta/send_message.js"></script>
     <df-messenger intent="WELCOME" chat-title="Luxor-Assistant" agent-id="dc753a90-b717-4099-a5fb-2780cc8237eb"
         language-code="en"></df-messenger>
 
     <script src="script.js"></script>
+    -->
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Retail_Assistant"
+  agent-id="dc753a90-b717-4099-a5fb-2780cc8237eb"
+  language-code="en"
+></df-messenger>
+    
 </body>
 
 </html>
