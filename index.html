@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Retail | Premium Shopping Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">LUXOR</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Collection</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <span class="search-icon">🔍</span>
+                <span class="cart-icon">🛒</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Elevate Your Lifestyle</h1>
+                <p>Discover the finest curated collection of premium products designed for the modern individual.</p>
+                <div class="cta-buttons">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="retail_hero_product_1766912639609.png" alt="Luxor Smart Watch" class="main-hero-img">
+                <div id="hero-img-placeholder"></div>
+            </div>
+        </section>
+
+        <section id="products" class="featured-products">
+            <h2>Featured Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="retail_hero_product_1766912639609.png" alt="Minimalist Watch">
+                    </div>
+                    <h3>Minimalist Watch</h3>
+                    <p>Rs.1999.00</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="product_audio_1766912665221.png" alt="Premium Audio">
+                    </div>
+                    <h3>Premium Audio</h3>
+                    <p>Rs.3499.00</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="product_leather_1766912724022.png" alt="Leather Carry">
+                    </div>
+                    <h3>Leather Carry</h3>
+                    <p>Rs.1299.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Demo Retail. All rights reserved.</p>
+    </footer>
+
+    <!-- Dialogflow Messenger Integration -->
+    <!-- Note: User needs to replace the project-id and agent-id -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/beta/send_message.js"></script>
+    <df-messenger intent="WELCOME" chat-title="Luxor-Assistant" agent-id="YOUR_AGENT_ID"
+        language-code="en"></df-messenger>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
